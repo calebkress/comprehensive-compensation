@@ -19,14 +19,17 @@ class SalarySlider extends Component {
   render() {
     let { salary } = this.state
     return (
-      <Slider
-        min="50000"
-        max="80000"
-        step="1000"
-        value={salary}
-        orientation="vertical"
-        onChange={this.handleOnChange}
-      />
+      <div className="salary">
+        <Slider
+          min="50000"
+          max="80000"
+          step="1000"
+          value={salary}
+          orientation="vertical"
+          onChange={this.handleOnChange}
+        />
+        <div className='SalaryValue'>${salary}</div>
+      </div>
     )
   }
 }

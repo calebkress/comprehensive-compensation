@@ -19,14 +19,17 @@ class EquitySlider extends Component {
   render() {
     let { equity } = this.state
     return (
-      <Slider
-        min="1"
-        max="5"
-        step="0.01"
-        value={equity}
-        orientation="vertical"
-        onChange={this.handleOnChange}
-      />
+      <div className="equity">
+        <Slider
+          min="1"
+          max="5"
+          step="0.01"
+          value={equity}
+          orientation="vertical"
+          onChange={this.handleOnChange}
+        />
+        <div className='equityValue'>{equity}%</div>
+      </div>
     )
   }
 }

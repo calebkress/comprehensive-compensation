@@ -19,14 +19,17 @@ class PtoSlider extends Component {
   render() {
     let { pto } = this.state
     return (
-      <Slider
-        min="8"
-        max="16"
-        step="1"
-        value={pto}
-        orientation="vertical"
-        onChange={this.handleOnChange}
-      />
+      <div className="pto">
+        <Slider
+          min="8"
+          max="16"
+          step="1"
+          value={pto}
+          orientation="vertical"
+          onChange={this.handleOnChange}
+        />
+        <div className='PtoValue'>{pto} days</div>
+      </div>
     )
   }
 }
