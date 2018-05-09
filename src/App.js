@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SalarySlider from './sliders/SalarySlider';
 import EquitySlider from './sliders/EquitySlider';
+import PtoSlider from './sliders/PtoSlider';
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,8 @@ class App extends Component {
           <SalarySlider />
           <h3>Equity</h3>
           <EquitySlider />
+          <h3>PTO</h3>
+          <PtoSlider />
         </div>
       </div>
     );
