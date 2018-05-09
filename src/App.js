@@ -11,12 +11,14 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Comprehensive Compensation</h1>
         </header>
-        <div className="Sliders">
+        <div className="SliderLabels">
           <h3>Salary</h3>
-          <SalarySlider />
           <h3>Equity</h3>
-          <EquitySlider />
           <h3>PTO</h3>
+        </div>
+        <div className="Sliders">
+          <SalarySlider />
+          <EquitySlider />
           <PtoSlider />
         </div>
       </div>
