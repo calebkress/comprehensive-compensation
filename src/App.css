@@ -17,12 +17,11 @@
   font-size: large;
 }
 
-.SliderLabels {
+.SliderLabels, .Sliders {
   display: flex;
   justify-content: space-evenly;
 }
 
-.Sliders {
-  display: flex;
-  justify-content: space-evenly;
+h3 {
+  padding-left: 90px;
 }
