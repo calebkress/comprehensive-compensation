@@ -23,7 +23,7 @@ class EquitySlider extends Component {
         <Slider
           min="1"
           max="5"
-          step="0.01"
+          step="0.1"
           value={equity}
           orientation="vertical"
           onChange={this.handleOnChange}
