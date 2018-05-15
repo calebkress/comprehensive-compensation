@@ -17,7 +17,7 @@ class InputRanges extends Component {
     }
   }
 
-  handleChange(event) {
+  handleChange(event, value) {
     this.setState({value: event.target.value});
   }
 
